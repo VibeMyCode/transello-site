@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Transello</title>
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#fff; --fg:#16181c; --muted:#5b6370; --accent:#3949c9; --border:#dfe2e7; --surface:#f5f6f8; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#17191d; --fg:#eceef2; --muted:#a1a8b4; --accent:#8d9cff; --border:#343943; --surface:#1f2227; color-scheme: dark; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display:flex; gap:12px; align-items:center; margin-bottom: 24px; }
+  header img { width:40px; height:40px; }
+  header a { color: inherit; text-decoration: none; font-weight: 700; font-size: 20px; }
+  nav { margin-left:auto; display:flex; gap:16px; font-size:14px; }
+  a { color: var(--accent); }
+  h1 { font-size: 28px; letter-spacing: -0.02em; } h2 { font-size: 20px; margin-top: 2em; }
+  code { background: var(--surface); padding: 2px 6px; border-radius: 6px; font-size: .92em; overflow-wrap: anywhere; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 3em 0; }
+  .card { border:1px solid var(--border); border-radius:14px; padding:18px 20px; background: var(--surface); }
+  .addr { font: 15px/1.4 ui-monospace,Menlo,monospace; word-break: break-all; }
+  button { font: inherit; padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); cursor: pointer; min-height: 40px; }
+  .muted { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="index.html">Transello</a>
+<nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></header>
+<h1>Transello Privacy Policy</h1>
+<p><strong>Effective date:</strong> 2026-10-12 · <strong>Version:</strong> 1.0</p>
+<p><strong>Contact:</strong> <a href="https://github.com/VibeMyCode/transello/issues/new/choose">GitHub issues</a></p>
+<p><em>(The Russian version follows the English one.)</em></p>
+<h2>Summary</h2>
+<p>Transello is a browser extension that translates text, selections and web pages when you ask it to. By default the translation runs <strong>locally</strong> using Chrome's built-in translation. Transello has <strong>no server</strong>. It does not collect analytics or telemetry, and it does not sell or share your data.</p>
+<h2>What Transello processes and where</h2>
+<ol>
+<li><strong>Local mode (default).</strong> The text you translate is processed by Chrome's built-in Translator and Language Detector on your device. It is not sent to Transello or to any third party. The first time you use a language pair, Chrome may download a language model from Google. That download contains no text you are translating.</li>
+<li><strong>Cloud mode (only if you turn it on).</strong> You can choose OpenAI, Anthropic (Claude), DeepSeek or OpenRouter and connect <strong>your own</strong> account or API key. When you do, the text you ask Transello to translate is sent directly from your browser to the provider you chose, only to perform that translation. For a full page, Transello first shows you how much text will be sent and asks you to confirm. It asks again every time on sites that look sensitive, such as banking, email or payment sites. The provider's own privacy policy and terms apply to that data, and the provider may charge your account:</li>
+</ol>
+<ul>
+<li>OpenAI: <a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a></li>
+<li>Anthropic: <a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li>
+<li>DeepSeek: <a href="https://platform.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html">https://platform.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html</a></li>
+<li>OpenRouter: <a href="https://openrouter.ai/privacy">https://openrouter.ai/privacy</a></li>
+</ul>
+<ol>
+<li><strong>Page content.</strong> Transello reads page text only after you choose a Transello menu item or press its shortcut. It reads only the current tab, and only the selected or visible text needed for that request. It does not monitor your browsing.</li>
+</ol>
+<h2>What is stored on your device</h2>
+<ul>
+<li><strong>Settings</strong> such as language, theme and chosen provider and model are stored in Chrome storage. If you use Chrome Sync, these settings may sync between your browsers. They contain no text and no keys.</li>
+<li><strong>API keys and sign-in keys</strong> are stored only on this device, in the extension's local storage. They are never synced and web pages cannot read them. Note that this is not an encrypted operating-system keychain: someone with access to your Chrome profile could read them. Disconnecting a provider deletes its key.</li>
+<li><strong>A popup draft</strong> is kept in memory until you close the browser. You can turn this off in Settings, and <em>Clear drafts and cache</em> deletes it.</li>
+<li><strong>No translation history</strong> is stored.</li>
+</ul>
+<h2>What Transello does not do</h2>
+<p>Transello does not:</p>
+<ul>
+<li>run accounts or servers of its own;</li>
+<li>show advertising or use tracking;</li>
+<li>collect browsing history;</li>
+<li>translate pages in the background;</li>
+<li>sell data or use it for any purpose other than the translation you requested.</li>
+</ul>
+<p>Use of data obtained through Chrome extension APIs complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>storage</code>: settings and keys on your device.</li>
+<li><code>contextMenus</code>: the right-click menu items.</li>
+<li><code>activeTab</code> and <code>scripting</code>: show the translation on the current page after you ask.</li>
+<li><code>identity</code> (optional): only for "Sign in with OpenRouter".</li>
+<li>Optional access to the API domain of a provider you connect.</li>
+</ul>
+<h2>Donations</h2>
+<p>Transello is free. An optional "Support Transello" link opens an external donation page. That payment happens outside the extension under the donation platform's terms. Transello never receives your payment details.</p>
+<h2>Children</h2>
+<p>Transello is not directed to children under 13 and collects no personal information.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the effective date above is updated and the change is noted in the release notes.</p>
+<hr>
+<h1>Политика конфиденциальности Transello</h1>
+<p><strong>Дата вступления в силу:</strong> 2026-10-12 · <strong>Версия:</strong> 1.0</p>
+<p><strong>Контакт:</strong> <a href="https://github.com/VibeMyCode/transello/issues/new/choose">GitHub issues</a></p>
+<h2>Кратко</h2>
+<p>Transello - расширение браузера, которое переводит текст, выделения и страницы по вашей команде. По умолчанию перевод выполняется <strong>локально</strong>, встроенным переводчиком Chrome. У Transello <strong>нет собственного сервера</strong>. Расширение не собирает аналитику и телеметрию, не продаёт данные и не передаёт их третьим лицам.</p>
+<h2>Что и где обрабатывается</h2>
+<ol>
+<li><strong>Локальный режим (по умолчанию).</strong> Текст переводится встроенными в Chrome Translator и Language Detector на вашем устройстве. Ни Transello, ни третьи лица его не получают. При первом использовании языковой пары Chrome может скачать языковую модель у Google; переводимый текст при этом не передаётся.</li>
+<li><strong>Облачный режим (только если вы его включили).</strong> Вы можете выбрать OpenAI, Anthropic (Claude), DeepSeek или OpenRouter и подключить <strong>свой</strong> аккаунт или API-ключ. Тогда текст, который вы просите перевести, отправляется из вашего браузера напрямую выбранному провайдеру и только для этого перевода. Перед переводом целой страницы Transello показывает объём текста и просит подтверждение. На сайтах, похожих на чувствительные (банки, почта, платежи), подтверждение запрашивается каждый раз. К этим данным применяются политика и условия провайдера, и провайдер может списать оплату с вашего аккаунта (ссылки на их политики - в английской версии выше).</li>
+<li><strong>Содержимое страниц.</strong> Transello читает текст страницы только после того, как вы выбрали пункт меню Transello или нажали горячую клавишу. Читается только текущая вкладка и только выделенный или видимый текст, нужный для запроса. Ваш просмотр сайтов не отслеживается.</li>
+</ol>
+<h2>Что хранится на устройстве</h2>
+<ul>
+<li><strong>Настройки</strong> (язык, тема, провайдер, модель) хранятся в хранилище Chrome. Если включена синхронизация Chrome, они могут синхронизироваться между вашими браузерами. Текстов и ключей в настройках нет.</li>
+<li><strong>API-ключи и ключи входа</strong> хранятся только на этом устройстве, в локальном хранилище расширения. Они не синхронизируются и недоступны веб-страницам. Это не зашифрованное хранилище операционной системы: имеющий доступ к вашему профилю Chrome может их прочитать. Отключение провайдера удаляет его ключ.</li>
+<li><strong>Черновик окна</strong> хранится в памяти до закрытия браузера. Это можно отключить в настройках, а кнопка «Очистить черновики и кэш» удаляет его.</li>
+<li><strong>История переводов не хранится.</strong></li>
+</ul>
+<h2>Чего Transello не делает</h2>
+<p>У Transello нет аккаунтов и серверов. Расширение:</p>
+<ul>
+<li>не показывает рекламу и не использует трекинг;</li>
+<li>не собирает историю браузера;</li>
+<li>не переводит страницы в фоне;</li>
+<li>не продаёт данные и не использует их ни для чего, кроме запрошенного вами перевода.</li>
+</ul>
+<h2>Пожертвования</h2>
+<p>Transello бесплатен. Необязательная ссылка «Поддержать Transello» открывает внешнюю страницу пожертвований. Оплата проходит вне расширения, по условиям этой платформы. Платёжные данные Transello не получает.</p>
+<h2>Изменения</h2>
+<p>При изменении политики обновляется дата вступления в силу, а изменение указывается в примечаниях к выпуску.</p>
+</main>
+</body>
+</html>
